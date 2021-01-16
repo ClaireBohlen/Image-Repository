@@ -6,16 +6,34 @@
 body{
     font-family: 'Muli'sans-serif;
     margin: 0; 
-    display: flex;
-    align-items:  center;
-    justify-content: center;
     height: 100vh;
     overflow: hidden;
 }
-/* Comment */
+
+
+/* Search Bar Style  */
+.search{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+
+}
+.input.hide{
+    display: none;
+}
+.icon{
+    cursor: pointer;
+    outline: 1px solid black;
+    padding: 4px;
+    
+}
+
+
 .container {
     display: flex; /* This always puts the elements into a row: add flex direction: column for column vs row */
     width: 90vw; /* view port : 100 slices and were taking 90 */
+    align-items:  center;
+    justify-content: center;
 
 
 }
