@@ -26,6 +26,14 @@ async function fetchApi(url) {
     return data;
   }
 
+  input.addEventListener('input', updateInput);
+  btn.addEventListener('submit', (event) => {
+    event.preventDefault();
+    currentSearch = searchValue;
+    searchPhotos(searchValue);
+  })
+
+
 
   //Generating DOM with API Data
   function generatePictures(data) {
