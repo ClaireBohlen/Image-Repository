@@ -80,6 +80,20 @@ body{
     position: relative; 
     transition: flex 0.7s ease-in; 
 }
+.panel img {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 40vh; /* 80 slices of the top-bottom  */
+    border-radius: 50px; /* rounded */
+    /* color: #fff; */
+    cursor: pointer;
+    flex: 0.5; /* all even but we will change with the active class */
+    margin: 10px; /* seperate them */
+    position: relative; 
+    transition: flex 0.7s ease-in; 
+
+}
 .panel h3 {
     font-size: 24px;
     position: absolute; /* Becuase we set panel relete: we want the h3 to be inside*/
