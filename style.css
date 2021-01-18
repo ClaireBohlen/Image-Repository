@@ -7,7 +7,7 @@ body{
     font-family: 'Muli'sans-serif;
     margin: 0; 
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -71,29 +71,19 @@ body{
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 40vh; /* 80 slices of the top-bottom  */
+    height: 80vh; /* 80 slices of the top-bottom  */
     border-radius: 50px; /* rounded */
     color: #fff;
     cursor: pointer;
-    flex: 0.5; /* all even but we will change with the active class */
+    /* width: 10px; */
+    flex: 1;
+    /* flex: 0.5;  */
     margin: 10px; /* seperate them */
     position: relative; 
     transition: flex 0.7s ease-in; 
+    width: 10vw;
 }
-.panel img {
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 40vh; /* 80 slices of the top-bottom  */
-    border-radius: 50px; /* rounded */
-    /* color: #fff; */
-    cursor: pointer;
-    flex: 0.5; /* all even but we will change with the active class */
-    margin: 10px; /* seperate them */
-    position: relative; 
-    transition: flex 0.7s ease-in; 
 
-}
 .panel h3 {
     font-size: 24px;
     position: absolute; /* Becuase we set panel relete: we want the h3 to be inside*/
@@ -103,7 +93,9 @@ body{
     opacity: 0; /* We set this to that we do not see the text until we click the image */
 }
 .panel.active{
-    flex: 5; /* When clicked it will get bigger */
+    width: 40vw;
+    flex: 10;
+     /* When clicked it will get bigger */
 
 }
 .panel.active h3{

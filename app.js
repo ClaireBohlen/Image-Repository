@@ -33,7 +33,7 @@ async function fetchApi(url) {
       const galleryImg = document.createElement("div");
       galleryImg.classList.add("panel1");
       galleryImg.innerHTML = `
-      <h3>${photo.photographer}</h3>
+      
       <a href=${photo.src.original}>Download</a>
      <img class="panel" src=${photo.src.large}></img>`;
      gallery.appendChild(galleryImg);
@@ -61,7 +61,7 @@ async function fetchApi(url) {
 
   //query on page load
     async function curatedPhotos() {
-    fetchLink = "https://api.pexels.com/v1/curated?per_page=15&page=1";
+    fetchLink = "https://api.pexels.com/v1/curated?per_page=15&page=2";
     const data = await fetchApi(fetchLink);
     generatePictures(data);
   }
